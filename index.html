@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="app.js"></script>
+    <title>Path Finding</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <label for="algorithm">Choose the algorithm:</label>
+        <input list="alg_name" name="algorithm" id="algorithm" />
+        <datalist id="alg_name">
+          <option value="A*"></option>
+          <option value="Dijkstra"></option>
+          <option value="DFS"></option>
+          <option value="BFS"></option>
+        </datalist>
+
+        <input
+          type="radio"
+          id="startPos"
+          name="choice"
+          value="startPos"
+          checked="checked"
+        />
+        <label for="startPos">startPos</label>
+        <input type="radio" id="endPos" name="choice" value="endPos" />
+        <label for="endPos">endPos</label>
+        <input type="radio" id="wall" name="choice" value="wall" />
+        <label for="wall">wall</label>
+
+        <button id="visualizeButton">Vizualize!</button>
+      </header>
+    </div>
+    <main id="main"></main>
+  </body>
+</html>

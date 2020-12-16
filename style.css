@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  height: 50px;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  background: aqua;
+}
+
+.startPos {
+  background: red !important;
+}
+
+.endPos {
+  background: blue !important;
+}
+
+.wall {
+  background: black !important;
+}
+
+.pathChecked {
+  background: deepskyblue;
+}
+
+.path {
+  background: greenyellow;
+}
